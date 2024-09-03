@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuron Radio Network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Asuron Radio Network</h1>
+        <h2 id="flashing-text">Turkana Music Online</h2>
+    </header>
+    <main>
+        <div class="radio-player">
+            <img src="cool-radio-image.jpg" alt="Radio Background" class="background-image">
+            <div class="controls">
+                <div class="info">
+                    <p id="song-name">Live from Lodwar</p>
+                    <p id="east-africa-time">East Africa Time: --:--:--</p>
+                    <p id="east-africa-date">East Africa Date: --/--/----</p>
+                </div>
+                <div class="volume-control">
+                    <label for="volume">Low</label>
+                    <input type="range" id="volume" class="volume" min="0" max="100" value="50">
+                    <label for="volume">High</label>
+                </div>
+                <div class="bottom-controls">
+                    <button id="play-button" class="btn play">Play</button>
+                    <button id="stop-button" class="btn stop">Stop</button>
+                </div>
+            </div>
+        </div>
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>Welcome to Asuron Online Radio Network, where we stream the best Turkana music, news, and entertainment
+                to keep you connected and informed.</p>
+        </section>
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <p>Email: johnasuron@live.com | Phone: +254757081670</p>
+        </section>
+    </main>
+    <footer>
+        <p>Radio programmed by John Asuron</p>
+    </footer>
+
+    <audio id="radio-stream" src="https://stream.zeno.fm/n105zpehd18uv"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
