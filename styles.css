@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     text-align: center;
 }
 
-/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -92,7 +92,7 @@ nav ul li a:hover {
     background-color: #023e8a;
 }
 
-/* Features Section */
+
 .features {
     display: flex;
     justify-content: center;
@@ -109,7 +109,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Intro Section */
+
 .intro {
     text-align: center;
     padding: 50px 20px;
@@ -124,7 +124,7 @@ nav ul li a:hover {
     color: #0077b6;
 }
 
-/* Gallery Section */
+
 .gallery {
     padding: 20px;
     background-color: #f4f4f4;
@@ -150,7 +150,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-/* Footer */
+
 footer {
     background-color: #0077b6;
     color: white;
@@ -165,7 +165,7 @@ footer p {
 footer .social-icons {
     display: flex;
     justify-content: flex-end;
-    /* Align icons to the right */
+   
     gap: 15px;
 }
 
@@ -178,9 +178,9 @@ footer .social-icons a img:hover {
     transform: scale(1.2);
 }
 
-/* About Us Specific Styles */
 
-/* White Water Rafting Section */
+
+
 .intro {
     padding: 50px 20px;
     text-align: center;
@@ -206,7 +206,7 @@ footer .social-icons a img:hover {
     border-radius: 10px;
 }
 
-/* History Section */
+
 .history {
     padding: 50px 20px;
     text-align: center;
@@ -223,7 +223,7 @@ footer .social-icons a img:hover {
     margin: 0 auto;
 }
 
-/* Adventure Awaits Section */
+
 .adventure {
     padding: 50px 20px;
     text-align: center;
