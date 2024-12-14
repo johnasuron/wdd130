@@ -1,3 +1,4 @@
+--- START OF FILE styles.css ---
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
@@ -16,6 +17,16 @@ body {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove any extra space below images */
+}
+
+
 /* Header */
 header {
     display: flex;
@@ -24,6 +35,7 @@ header {
     padding: 20px;
     background-color: #b1bdc4;
     color: white;
+    flex-wrap: wrap;
 }
 
 header .logo img {
@@ -34,6 +46,8 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -55,13 +69,15 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: auto;
+    min-height: 70vh;
     background-image: url('hero-image.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
     text-align: left;
+    padding: 40px 20px;
 }
 
 .hero::before {
@@ -82,7 +98,7 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -229,6 +245,7 @@ nav ul li a:hover {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .history .text-content {
@@ -342,8 +359,9 @@ footer p {
 
 footer .social-icons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 15px;
+    margin-top: 15px;
 }
 
 footer .social-icons a img {
@@ -402,7 +420,6 @@ footer .social-icons a img:hover {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-
 }
 
 .team .profile p {
@@ -587,4 +604,41 @@ footer .social-icons a img:hover {
 
 .trips-cta p {
     margin-bottom: 20px;
+}
+
+/* Media Queries for Responsive Layout */
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .history .content-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 }
